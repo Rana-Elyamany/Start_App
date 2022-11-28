@@ -1,0 +1,10 @@
+.swiper-slide{
+    margin: 40px 15px 0px 15px;
+    width: 10%;
+}
+.swiper-slide img{
+    width: 100%;
+}
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: rgb(255,196,81);
+}
