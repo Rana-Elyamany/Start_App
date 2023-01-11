@@ -1,6 +1,47 @@
-a{
+ 
+ a{
     text-decoration: none;
 }
 header{
-    background-color: rgba(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+}
+nav{
+    color: black;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content:center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: white;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color:rgb(255,196,81) ;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu a{
+    color: black;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu a:hover{
+    background-color: rgb(255,196,81);
+}
+.get-started-btn{
+    height: 40px;
+    width: 130px;
+}
+#header .logo a{
+    font-size: 32px;
+}
+.navbar-collapse ul li{
+    margin: auto 7px;
+}
+@media (max-width: 991px){
+    header{
+        background-color: rgba(0, 0, 0, 0.938);
+    }
+    #navbarNavDropdown{
+        border-radius: 20px;
+    }
+    .navbar-nav{
+        border-radius: 20px;
+    }
 }

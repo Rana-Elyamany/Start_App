@@ -1,0 +1,25 @@
+
+<div class="container my-5 pt-5">
+    <div class="card">
+        <!-- <h6>{{message}}</h6> -->
+        <div class="card-body">
+            <div class="form-group">
+                <label for="">Teacher Name</label>
+                <input type="text" class="form-control" [(ngModel)]="teacher.name">
+            </div>
+            <div class="form-group">
+                <label for="">Teacher Phone</label>
+                <input type="text" class="form-control" [(ngModel)]="teacher.phone">
+            </div>
+            <div class="form-group">
+                <label for="">Teacher Age</label>
+                <input type="number" class="form-control"[(ngModel)]="teacher.age">
+            </div>
+            <div class="form-group">
+                <label for="">Teacher Image Url</label>
+                <input type="url" class="form-control"[(ngModel)]="teacher.imgUrl">
+            </div>
+            <button (click)="edit()" class="btn btn-info"> confirm edit</button>
+        </div>
+    </div>
+</div>

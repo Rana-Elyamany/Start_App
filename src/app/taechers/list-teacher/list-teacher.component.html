@@ -1,0 +1,37 @@
+<div class="container my-5 pt-5">
+    <div class="card">
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <th scope="col">#</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th>Action</th>
+
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of allData,let i=index">
+                        <th>{{i+1}}</th>
+                        <th>{{data.id}}</th>
+                        <th>{{data.teacherName}}</th>
+                        <th>{{data.teacherAge}}</th>
+                        <th>
+                            <div class="dropdown">
+                            <a class="" type="button" data-toggle="dropdown" aria-expanded="false" style="font-size: 25px;">
+                                <i class="fa-solid fa-ellipsis text-info"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item text-danger" (click)="onDelete(data.id)"><i class="fa-solid fa-trash-can"></i></a>
+                              <a class="dropdown-item text-info" routerLink="/showTeacher/{{ data.id }}"><i class="fa-solid fa-eye"></i></a>
+                              <a class="dropdown-item text-primary" routerLink="/editTeacher/{{ data.id }}"><i class="fa-solid fa-pen-to-square"></i></a>
+                            </div>
+                          </div>
+                        </th>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

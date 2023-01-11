@@ -1,0 +1,40 @@
+<div class="container my-5 pt-5">
+    <div class="card">
+        <div class="card-body">
+            <form action="" [formGroup]="TeacherForm">
+            <div class="form-group">
+                <label for="">Teacher Name</label>
+                <input type="text" class="form-control" formControlName="teacherName">
+                <div *ngIf="teacherName.touched && teacherName.invalid" class="alert alert-danger">
+                    you must enter valid data
+                </div>
+                
+            </div>
+            <div class="form-group">Teacher Phone
+                <input type="text" class="form-control" formControlName="teacherPhone">
+            </div>
+            <div class="form-group">
+                <label for="">Teacher Age</label>
+                <input type="number" class="form-control" formControlName="teacherAge">
+            </div>
+            <div class="form-group">
+                <label for="">Teacher Level</label>
+                <input type="text" class="form-control" formControlName="teacherLevel">
+            </div>
+            <div class="form-group">
+                <label for="">Teacher Course</label>
+                <input type="text" class="form-control" formControlName="teacherCourse">
+            </div>
+            <div class="form-group">
+                <label for="">Teacher ImgUrl</label>
+                <input type="text" class="form-control" formControlName="teacherUrl">
+                <div *ngIf="teacherUrl.touched && teacherUrl.invalid" class="alert alert-danger">
+                    you must enter valid URL
+                </div>
+            </div>
+            
+        </form>
+        </div>
+        <button  [disabled]="TeacherForm.invalid" (click)="onsubmit()" class="btn btn-info">Submit Data</button>
+    </div>
+</div>
